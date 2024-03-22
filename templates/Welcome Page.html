@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+<body>
+<!-- Main content container/background -->
+    <div class="background">
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <img src="{{ url_for('static', filename='Logo_GUNew.png') }}" class="logo">
+            <!-- Navigation buttons -->
+            <a href="Welcome Page.html"><button type="button">Home</button></a>
+            <a href="Information Page.html"><button type="button">Information</button></a>
+            <a href="Data Collection.html"><button type="button">Data Collection</button></a>
+        </div>
+            <div class="content">
+                <!-- Introduction section -->
+        <h1>Welcome to the platform of GIC</h1> <br> <br>
+                <p>The website is designed for collecting data on students progress at GIC. It will only take a few minutes to finish the survey.</p><br>
+                <!-- Survey details paragraph -->
+                <p>The survey is about:<br>• Academic experience<br>• Course satisfaction<br>• Learning resources and facilities<br></p>
+                <!-- Button to start the survey -->
+                <a href="Data Collection.html"><button class="quizbutton" role="button">Start the survey</button></a>
+
+         </div>
+
+    </div>
+
+</body>
+</html>

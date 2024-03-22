@@ -1,0 +1,229 @@
+/* General styling for all pages */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial , sans-serif;
+}
+
+/* Background styling for the welcome page */
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Background4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: auto;
+    opacity: 1;
+}
+
+/* Background styling for the information and data collection page with gradient overlay */
+.background1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Background4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: auto;
+    opacity: 1;
+}
+
+/* Logo styling */
+.logo {
+    width: 100%
+    width:128px;
+    height:128px;
+    position: absolute;
+    top:0;
+    left:10px;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #1e293b;
+    opacity: 0.9;
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Navigation button styling */
+button{
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 4px;
+  border-width: 0
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 620;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none c solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 1px 2px 3px rgba(166, 175, 195, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 64px;
+}
+
+button:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+/* Responsive button styles for larger screens */
+@media (min-width: 768px) {
+  button {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Main content styling for the welcome page and information page*/
+.content {
+    color: #0d172a;
+    margin: 20px 160px;
+    border: 1px solid #1e293b;
+    border-radius: 25px;
+    width: 80% ;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 10px;
+    background-color: #fff;
+    opacity: 0.9;
+    }
+
+/* Image styling */
+.images {
+    max-width: 300px;
+    margin: 20px;
+    justify-content: center;}
+
+/* Main content styling for the data collection page */
+.content2 {
+   display: flex;
+   height: 180vh;
+   justify-content: center;
+   align-items: flex-start;
+   margin: 10px 200px;
+   background: #003760;
+   background-size: cover;
+   border-radius: 20px;
+}
+
+/* Paragraph styling for text alignment and margin */
+.p1 {
+    text-align: left;
+    justify-content: space-evenly;
+    margin-left:30px;}
+.p2 {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+      }
+
+/* Header styles */
+h1 {
+    margin-left: 10px;
+    text-align: center;
+    }
+h2 {
+    margin:20px 10px;
+}
+
+/* User details label styling */
+.userdetails labels{
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    }
+
+/* Form styling */
+form {
+    width: 65%;
+    color: #1e293b;
+    width; 80%;
+    text-align: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    margin: auto;
+    margin-top: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    }
+
+/* Inputbox styling in form */
+.inputbox {
+  color: #fff;
+  width: 95%;
+  height: 30px;
+  position: relative;
+  bottom: 15px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #1e293b;
+  opacity: 0.5;
+  margin: 0 8.5px;;
+}
+
+/* Input focus styling */
+form input:focus{
+    opacity: 1;
+    background-color:#fff;
+    border-color: #1e293b;
+    color: #1e293b;
+    }
+
+/* Label styling */
+label {
+    margin: 10px;
+    }
+
+/* Questions section styling */
+form .questions{
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0, 10px;}
+
+/* Submit and Start the questionnaire button styling */
+.quizbutton {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  justify-content: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #0d172a;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  opacity: 0.85
+}
+
+.quizbutton:hover {
+  background-position: left center;
+  color: #fff;
+  text-decoration: none c solid;
+}
+
+.quizbutton:active {
+  transform: scale(0.95);
+}

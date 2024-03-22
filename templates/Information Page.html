@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Page</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+<body>
+<!-- Main content container/background -->
+ <div class="background1">
+        <div class="navbar">
+             <!-- Logo -->
+            <img src="{{ url_for('static', filename='Logo_GUNew.png') }}" class="logo">
+            <!-- Navigation buttons -->
+            <a href="Welcome Page.html"><button type="Button">Home</button></a>
+            <a href="Information Page.html"><button type="Button">Information</button></a>
+            <a href="Data Collection.html"><button type="Button">Data Collection</button></a>
+        </div>
+     <!-- Main content section -->
+       <div class="content">
+                <h1>Information</h1>
+           <!-- Welcome message -->
+                <h2>Dear Participants, Welcome to the Glasgow International College questionnaire.</h2>
+                <p class="p1">We value your opinion and would like to hear about your academic journey at Glasgow International College (GIC).
+                     Your feedback is crucial in helping us understand your experiences and make improvements that contribute to the overall academic satisfaction of our students.</p><br>
+               <!-- Survey Purpose section -->
+                <h2>Survey Purpose</h2>
+                    <p class="p1">This survey aims to gather insights into your academic experiences at GIC. We are interested in your thoughts on courses, learning resources, teaching quality, and more.
+                        Your responses will remain confidential, and the information collected will be used solely for the purpose of enhancing the academic environment at GIC.</p><br>
+            <!-- Images section -->
+           <img src=" {{ url_for('static', filename='INFOpage1.png')}} " class="images">
+           <img src=" {{ url_for('static', filename='INFOpage2.jpg')}} " class="images">
+           <img src=" {{ url_for('static', filename='INFopage3.png')}}" class="images">
+            <!-- Closing message -->
+                <p class="p1">Thank you for taking the time to share your experiences.
+                    Your feedback is instrumental in helping us enhance the academic journey for current and future students at Glasgow International College.
+                    <br><br>Best regards</P>
+                <br><br>
+           <!-- Contact information section -->
+                <h2>Contact us via:</h2>
+                <ul class="p2"><li><a href="https://www.facebook.com/GICGlasgow">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/gicglasgow">Instagram</a></li>
+                   <li>Mail address: contact.gic@kaplan.com</li>
+                    <li>Telephone number: 0141330866#</li>
+                    <li><a href="https://www.gla.ac.uk/">The official website of UofG</a></li>
+                </ul>
+           <!-- About the author section -->
+               <h2>About the author</h2>
+           <ul class="p2">
+               <li>Name: Oyunbold Bulganbaatar </li>
+               <li>Mail address: 2962147B@student.gla.ac.uk</li>
+           </ul>
+       </div>
+
+ </div>
+</body>
+</html>
