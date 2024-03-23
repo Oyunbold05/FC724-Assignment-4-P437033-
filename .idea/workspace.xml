@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09cf357-6f99-4a00-82d2-6832fe18b939" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/static/INFOpage1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/INFOpage2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/INFopage3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Logo_GUNew.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/background4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Data Collection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Information Page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Welcome Page.html" afterDir="false" />
+    <list default="true" id="c09cf357-6f99-4a00-82d2-6832fe18b939" name="Changes" comment="Second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Data Collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Data Collection.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +69,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711061620348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second commit">
+      <option name="closed" value="true" />
+      <created>1711066230263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711066230263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>

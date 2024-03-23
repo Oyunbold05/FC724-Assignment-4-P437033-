@@ -14,119 +14,25 @@
             <!-- Logo -->
             <img src="{{ url_for('static', filename='Logo_GUNew.png') }}" class="logo">
              <!-- Navigation buttons -->
-            <a href="{{ url_for('Welcome Page.html') }}"><button type="Button">Home</button></a>
+            <a href="Welcome Page.html"><button type="Button">Home</button></a>
             <a href="Information Page.html"><button type="Button">Information</button></a>
             <a href="Data Collection.html"><button type="Button">Data Collection</button></a>
         </div>
       <!-- Main content section -->
          <div class="content2">
               <!-- Survey form -->
-                 <form action="#">
+                 <form method="post">
                      <h1>Survey</h1>
                      <!-- Personal details section -->
                 <div class="userdetails">
                     <h2>Personal details</h2>
                     <!-- Input fields for personal details -->
-                    <label for="First name">First name<br><br><input  id="First name" name="First name" required="required" class="inputbox" placeholder="Enter your first name"> </label><br>
-                    <label for="Last name">Last name<br><br><input id="Last name" name="Last name" required="required" class="inputbox" placeholder="Enter your last name"> </label><br>
-                    <label for="ID number">Student P Number<br><br><input id="ID number" name="ID number" required="required" class="inputbox" placeholder="Enter your P number"></label><br>
-                    <label for="Gmail">Mail address<br><br><input id="Gmail" name="Gmail" class="inputbox" type="email" placeholder="Enter your mail address"></label><br>
-                    <label for="Mobile number">Mobile Number<br><br><input id="Mobile number" name="ID number" type="number" class="inputbox" placeholder="Enter your mobile number"></label><br>
-                    <label>Gender</label> <!-- Option selection for gender -->
-                    <select>
-                        <option name="">---Choose---</option>
-                        <option name="male">Male</option>
-                        <option name="female">Female</option>
-                        <option name="other">Other</option>
-                    </select> <br><br>
-                     <label> Foundation course </label> <!-- Option selection for course name -->
-                     <select>
-                         <option name="">---Choose---</option>
-                        <option name="FCAH">Foundation Certificate for Arts and Humanities</option>
-                        <option name="FCBSS">Foundation Certificate for Business and Social Sciences</option>
-                        <option name="FCSE">Foundation Certificate for Science and Engineering</option>
-                     </select>
+                    {{ form.First_name.label }} {{ form.First_name }}
+                    {{ form.Last_name.label }} {{ form.Last_name }}
+                    {{ form.ID_Number.label }} {{ form.ID_Number }}
                 </div>
-                     <br><br>
-                     <!-- Questions section -->
-                     <h2>Questions</h2>
-                    <div class="questions">
-                         <!-- Question 1 -->
-                            <div>
-                                <label>How would you rate your overall academic experience at Glasgow International College (GIC)?</label><br>
-                                <input type="radio" id="vgood1" name="vgood" value="verygood"> <!-- Radio buttons for the rating scale -->
-                                <label>Very good</label>
-                                <input type="radio" id="good1" name="good" value="good">
-                                <label>Good</label>
-                                <input type="radio" id="neither1" name="neither" value="neither">
-                                <label>Neither</label>
-                                <input type="radio" id="bad1" name="bad" value="bad">
-                                <label>Bad</label>
-                                <input type="radio" id="vbad1" name="vbad" value="verybad">
-                                <label>Very bad</label>
-                            </div><br>
-                        <!-- Question 2 -->
-                                <div>
-                                <label>How would you describe the effectiveness of learning resources, such as libraries, labs, and online materials at GIC?</label><br>
-                                <input type="radio" id="vgood2" name="vgood" value="verygood"> <!-- Radio buttons for the rating scale -->
-                                <label>Very good</label>
-                                <input type="radio" id="good2" name="good" value="good">
-                                <label>Good</label>
-                                <input type="radio" id="neither2" name="neither" value="neither">
-                                <label>Neither</label>
-                                <input type="radio" id="bad2" name="bad" value="bad">
-                                <label>Bad</label>
-                                <input type="radio" id="vbad2" name="vbad" value="verybad">
-                                <label>Very bad</label>
-                            </div><br>
-                        <!-- Question 3 -->
-                            <div>
-                                <label>How satisfied are you with the academic courses offered at GIC in terms of content, structure, and delivery?</label><br>
-                                <input type="radio" id="vsatisfied3" name="vsatisfied" value="verysatisfied"> <!-- Radio buttons for the rating scale -->
-                                <label>Very satisfied</label>
-                                <input type="radio" id="satisfied3" name="satisfied" value="satisfied">
-                                <label>Satisfied</label>
-                                <input type="radio" id="neither3" name="neither2" value="Neither">
-                                <label>Neither</label>
-                                <input type="radio" id="unsatisfied3" name="unsatisfied" value="unsatisfied">
-                                <label>Satisfied</label>
-                                <input type="radio" id="vunsatisfied3" name="vunsatisfied" value="veryunsatisfied">
-                                <label>Very unsatisfied</label>
-                            </div><br>
-                        <!-- Question 4 -->
-                          <div>
-                                <label>How satisfied are you with the quality of teaching and support provided by faculty members at GIC?</label><br>
-                               <input type="radio" id="vsatisfied4" name="vsatisfied" value="verysatisfied"> <!-- Radio buttons for the rating scale -->
-                                <label>Very satisfied</label>
-                                <input type="radio" id="satisfied4" name="satisfied" value="satisfied">
-                                <label>Satisfied</label>
-                                <input type="radio" id="neither4" name="neither2" value="Neither">
-                                <label>Neither</label>
-                                <input type="radio" id="unsatisfied4" name="unsatisfied" value="unsatisfied">
-                                <label>Satisfied</label>
-                                <input type="radio" id="vunsatisfied4" name="vunsatisfied" value="veryunsatisfied">
-                                <label>Very unsatisfied</label>
-                            </div><br>
-                        <!-- Question 5 -->
-                        <div>
-                            <label>To what extent do you believe GIC has prepared you for further academic studies at the university level or in your chosen field?<br> (Scale between 1 being 'Not prepared' and 5 being 'Prepared')</label><br>
-                                <input type="radio" id="vprepared5" name="vprepared" value="5"> <!-- Radio buttons for the rating scale -->
-                                <label>5</label>
-                                <input type="radio" id="prepared5" name="prepared" value="4">
-                                <label>4</label>
-                                <input type="radio" id="neither5" name="neither" value="3">
-                                <label>3</label>
-                                <input type="radio" id="notprepared5" name="notprepared5" value="2">
-                                <label>2</label>
-                                <input type="radio" id="vnotprepared5" name="notprepared5" value="1">
-                                <label>1</label>
-                              </div><br><br>
-                        <div>
-                            <label>What suggestions do you have for enhancing the overall academic experience for students at GIC?</label><br>
-                             <!-- Textarea for suggestions and feedbacks -->
-                            <textarea cols="120" rows="8" name="feebback" placeholder="Write here.."></textarea>
-                        </div>
-                           <button class="quizbutton">Submit</button>
+                     <div>
+                           <button type='submit' class="quizbutton">Submit</button>
                     </div>
                 </form>
          </div>
