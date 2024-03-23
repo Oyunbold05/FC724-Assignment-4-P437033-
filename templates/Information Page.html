@@ -13,9 +13,9 @@
              <!-- Logo -->
             <img src="{{ url_for('static', filename='Logo_GUNew.png') }}" class="logo">
             <!-- Navigation buttons -->
-            <a href="Welcome Page.html"><button type="Button">Home</button></a>
-            <a href="Information Page.html"><button type="Button">Information</button></a>
-            <a href="Data Collection.html"><button type="Button">Data Collection</button></a>
+            <a href="{{ url_for('homepage') }}"><button type="Button">Home</button></a>
+            <a href="{{ url_for('informationpage') }}"><button type="Button">Information</button></a>
+            <a href="{{ url_for('datacollection') }}"><button type="Button">Data Collection</button></a>
         </div>
      <!-- Main content section -->
        <div class="content">

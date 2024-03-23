@@ -14,23 +14,32 @@
             <!-- Logo -->
             <img src="{{ url_for('static', filename='Logo_GUNew.png') }}" class="logo">
              <!-- Navigation buttons -->
-            <a href="Welcome Page.html"><button type="Button">Home</button></a>
-            <a href="Information Page.html"><button type="Button">Information</button></a>
-            <a href="Data Collection.html"><button type="Button">Data Collection</button></a>
+            <a href="{{ url_for('homepage') }}"><button type="Button">Home</button></a>
+            <a href="{{ url_for('informationpage') }}"><button type="Button">Information</button></a>
+            <a href="{{ url_for('datacollection') }}"><button type="Button">Data Collection</button></a>
         </div>
       <!-- Main content section -->
          <div class="content2">
               <!-- Survey form -->
                  <form method="post">
+                    {{ form.csrf_token }}
                      <h1>Survey</h1>
                      <!-- Personal details section -->
                 <div class="userdetails">
                     <h2>Personal details</h2>
                     <!-- Input fields for personal details -->
-                    {{ form.First_name.label }} {{ form.First_name }}
-                    {{ form.Last_name.label }} {{ form.Last_name }}
-                    {{ form.ID_Number.label }} {{ form.ID_Number }}
+                    {{ form.First_Name.label }} <br><br> {{ form.First_Name(class="inputbox") }}<br>
+                    {{ form.Last_Name.label }} <br><br> {{ form.Last_Name(class="inputbox") }}<br>
+                    {{ form.ID_Number.label }} <br><br> {{ form.ID_Number(class="inputbox") }}<br>
+                    {{ form.Email.label }} <br><br> {{ form.Email(class="inputbox") }}<br>
+                    {{ form.Mobile_Number.label }} <br><br> {{ form.Mobile_Number(class="inputbox") }}<br>
+                    {{ form.Gender.label }} {{ form.Gender }}<br><br>
+                    {{ form.Course.label }} {{ form.Course }}<br><br>
                 </div>
+                    <h2>Questions</h2>
+                     <!-- Questions section -->
+
+
                      <div>
                            <button type='submit' class="quizbutton">Submit</button>
                     </div>

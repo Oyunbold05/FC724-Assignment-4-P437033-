@@ -14,9 +14,9 @@
             <!-- Logo -->
             <img src="{{ url_for('static', filename='Logo_GUNew.png') }}" class="logo">
             <!-- Navigation buttons -->
-            <a href="Welcome Page.html"><button type="button">Home</button></a>
-            <a href="Information Page.html"><button type="button">Information</button></a>
-            <a href="Data Collection.html"><button type="button">Data Collection</button></a>
+            <a href="{{ url_for('homepage') }}"><button type="Button">Home</button></a>
+            <a href="{{ url_for('informationpage') }}"><button type="Button">Information</button></a>
+            <a href="{{ url_for('datacollection') }}"><button type="Button">Data Collection</button></a>
         </div>
             <div class="content">
                 <!-- Introduction section -->
@@ -25,7 +25,7 @@
                 <!-- Survey details paragraph -->
                 <p>The survey is about:<br>• Academic experience<br>• Course satisfaction<br>• Learning resources and facilities<br></p>
                 <!-- Button to start the survey -->
-                <a href="Data Collection.html"><button class="quizbutton" role="button">Start the survey</button></a>
+                <a href="{{ url_for('datacollection') }}"><button class="quizbutton" role="button">Start the survey</button></a>
 
          </div>
 
