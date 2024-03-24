@@ -1,10 +1,14 @@
-First Name: Oyunbold
-Last Name: Bulganbaatar
-Student P Number: P437033
-Mail Address: obobulgaa05@gmail.com
-Mobile Number: 95863315
-Gender: Male
-Foundation Course: FCSE
 
-
+First Name: TesterName
+Last Name: TesterLastName
+Student P Number: P123456
+Mail Address: random123@gmail.com
+Mobile Number: 7766554433
+Gender: Other
+Question 1 answer: Very Good
+Question 2 answer: Neutral
+Question 3 answer: Unsatisfied
+Question 4 answer: Satisfied
+Question 5 answer: 3
+Suggestions and feedback: This is the test.
 

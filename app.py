@@ -86,7 +86,8 @@ def datacollection():
             file.write(f"Question 3 answer: {form.Question_3.data}\n")
             file.write(f"Question 4 answer: {form.Question_4.data}\n")
             file.write(f"Question 5 answer: {form.Question_5.data}\n")
-
+            if form.Suggestions:
+                file.write(f"Suggestions and feedback: {form.Suggestions.data}\n")
 
             file.write('\n')
 
