@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09cf357-6f99-4a00-82d2-6832fe18b939" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/feedback.txt" afterDir="false" />
+    <list default="true" id="c09cf357-6f99-4a00-82d2-6832fe18b939" name="Changes" comment="Third Commit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Data Collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Data Collection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Information Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Information Page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Welcome Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Welcome Page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +85,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711231991224</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second commit">
+      <option name="closed" value="true" />
+      <created>1711237301704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711237301704</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Third Commit.">
+      <option name="closed" value="true" />
+      <created>1711237467694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711237467694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
+    <MESSAGE value="Third commit." />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="Third Commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Commit." />
   </component>
 </project>

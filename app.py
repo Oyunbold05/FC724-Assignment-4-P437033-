@@ -13,16 +13,43 @@ class Survey(FlaskForm):
     ID_Number = StringField('Student P Number', validators=[InputRequired()])
     Email = StringField('Mail Address', validators=[InputRequired()])
     Mobile_Number = IntegerField('Mobile Number', validators=[InputRequired()])
+
     Gender = SelectField('Gender', choices=[
         ('Male', 'Male'),
         ('Female', 'Female'),
         ('Other', 'Other')
     ], validators=[InputRequired()])
-    Course=SelectField('Foundation Course', choices=[
-        ('FCAH', 'Foundation Certificate for Arts and Humanities'),
-        ('FCBSS', 'Foundation Certificate for Business and Social Sciences'),
-        ('FCSE', 'Foundation Certificate for Science and Engineering')
+
+    Course = SelectField('Foundation Course', choices=[
+        ('FC for Arts and Humanities', 'Foundation Certificate for Arts and Humanities'),
+        ('FC for Business and Social Sciences', 'Foundation Certificate for Business and Social Sciences'),
+        ('FC for Science and Engineering', 'Foundation Certificate for Science and Engineering')
     ], validators=[InputRequired()])
+
+    good_or_bad_choices = [('Very Good', 'Very Good'),
+        ('Good', 'Good'),
+        ('Neutral', 'Neutral'),
+        ('Bad', 'Bad'),
+        ('Very Bad', 'Very Bad')
+    ]
+
+    satisfied_or_unsatisfied_choices = [('Very Satisfied', 'Very Satisfied'),
+        ('Satisfied', 'Satisfied'),
+        ('Neutral', 'Neutral'),
+        ('Unsatisfied', 'Unsatisfied'),
+        ('Very Unsatisfied', 'Very Unsatisfied')
+    ]
+    between_1_and_5_scale_choice = [('5', '5'),
+        ('4', '4'),
+        ('3', '3'),
+        ('2', '2'),
+        ('1', '1')
+    ]
+    Question_1 = RadioField('How would you rate your overall academic experience at Glasgow International College (GIC)?', choices=good_or_bad_choices)
+    Question_2 = RadioField('How would you describe the effectiveness of learning resources, such as libraries, labs, and online materials at GIC?', choices=good_or_bad_choices)
+    Question_3 = RadioField('How satisfied are you with the academic courses offered at GIC in terms of content, structure, and delivery?', choices=satisfied_or_unsatisfied_choices)
+    Question_4 = RadioField('How satisfied are you with the quality of teaching and support provided by faculty members at GIC?', choices=satisfied_or_unsatisfied_choices)
+    Question_5 = RadioField('To what extent do you believe GIC has prepared you for further academic studies at the university level or in your chosen field', choices=between_1_and_5_scale_choice)
 
 
 @app.route('/')
