@@ -4,16 +4,20 @@ from wtforms import StringField, TextAreaField, SelectField, RadioField, Integer
 from wtforms.validators import InputRequired
 
 app = Flask(__name__)
+# Secret key for security measure.
 app.secret_key = "Password"
 
 
+# Creating class for Form which is posted on the webpage and receives input from user.
 class Survey(FlaskForm):
+    # String and Integer fields for personal details.
     First_Name = StringField('First Name', validators=[InputRequired()])
     Last_Name = StringField('Last Name', validators=[InputRequired()])
     ID_Number = StringField('Student P Number', validators=[InputRequired()])
     Email = StringField('Mail Address', validators=[InputRequired()])
     Mobile_Number = IntegerField('Mobile Number', validators=[InputRequired()])
 
+    # Selection field for gender selection and course selection.
     Gender = SelectField('Gender', choices=[
         ('Male', 'Male'),
         ('Female', 'Female'),
@@ -26,6 +30,7 @@ class Survey(FlaskForm):
         ('FC for Science and Engineering', 'Foundation Certificate for Science and Engineering')
     ], validators=[InputRequired()])
 
+    # Choice values for question section
     good_or_bad_choices = [('Very Good', 'Very Good'),
         ('Good', 'Good'),
         ('Neutral', 'Neutral'),
@@ -45,6 +50,8 @@ class Survey(FlaskForm):
         ('2', '2'),
         ('1', '1')
     ]
+
+    # Radio fields for question section.
     Question_1 = RadioField('How would you rate your overall academic experience at Glasgow International College (GIC)?', choices=good_or_bad_choices,
                             validators=[InputRequired()])
     Question_2 = RadioField('How would you describe the effectiveness of learning resources, such as libraries, labs, and online materials at GIC?', choices=good_or_bad_choices,
@@ -57,6 +64,7 @@ class Survey(FlaskForm):
                             validators=[InputRequired()])
 
     Suggestions = TextAreaField('What suggestions do you have for enhancing the overall academic experience for students at GIC?')
+
 
 @app.route('/')
 def homepage():
@@ -74,6 +82,7 @@ def datacollection():
     if form.validate_on_submit():
         # Debugging message to check if form validation is successful
         print("Form validation successful")
+        # Creating txt file and appending inputs given in the form.
         with open('feedback.txt', 'a') as file:
             file.write(f"First Name: {form.First_Name.data}\n")
             file.write(f"Last Name: {form.Last_Name.data}\n")
