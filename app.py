@@ -45,12 +45,18 @@ class Survey(FlaskForm):
         ('2', '2'),
         ('1', '1')
     ]
-    Question_1 = RadioField('How would you rate your overall academic experience at Glasgow International College (GIC)?', choices=good_or_bad_choices)
-    Question_2 = RadioField('How would you describe the effectiveness of learning resources, such as libraries, labs, and online materials at GIC?', choices=good_or_bad_choices)
-    Question_3 = RadioField('How satisfied are you with the academic courses offered at GIC in terms of content, structure, and delivery?', choices=satisfied_or_unsatisfied_choices)
-    Question_4 = RadioField('How satisfied are you with the quality of teaching and support provided by faculty members at GIC?', choices=satisfied_or_unsatisfied_choices)
-    Question_5 = RadioField('To what extent do you believe GIC has prepared you for further academic studies at the university level or in your chosen field', choices=between_1_and_5_scale_choice)
+    Question_1 = RadioField('How would you rate your overall academic experience at Glasgow International College (GIC)?', choices=good_or_bad_choices,
+                            validators=[InputRequired()])
+    Question_2 = RadioField('How would you describe the effectiveness of learning resources, such as libraries, labs, and online materials at GIC?', choices=good_or_bad_choices,
+                            validators=[InputRequired()])
+    Question_3 = RadioField('How satisfied are you with the academic courses offered at GIC in terms of content, structure, and delivery?', choices=satisfied_or_unsatisfied_choices,
+                            validators=[InputRequired()])
+    Question_4 = RadioField('How satisfied are you with the quality of teaching and support provided by faculty members at GIC?', choices=satisfied_or_unsatisfied_choices,
+                            validators=[InputRequired()])
+    Question_5 = RadioField('To what extent do you believe GIC has prepared you for further academic studies at the university level or in your chosen field? (Rate from 1(Not prepared) to 5(Prepared))', choices=between_1_and_5_scale_choice,
+                            validators=[InputRequired()])
 
+    Suggestions = TextAreaField('What suggestions do you have for enhancing the overall academic experience for students at GIC?')
 
 @app.route('/')
 def homepage():
@@ -75,7 +81,12 @@ def datacollection():
             file.write(f"Mail Address: {form.Email.data}\n")
             file.write(f"Mobile Number: {form.Mobile_Number.data}\n")
             file.write(f"Gender: {form.Gender.data}\n")
-            file.write(f"Foundation Course: {form.Course.data}\n")
+            file.write(f"Question 1 answer: {form.Question_1.data}\n")
+            file.write(f"Question 2 answer: {form.Question_2.data}\n")
+            file.write(f"Question 3 answer: {form.Question_3.data}\n")
+            file.write(f"Question 4 answer: {form.Question_4.data}\n")
+            file.write(f"Question 5 answer: {form.Question_5.data}\n")
+
 
             file.write('\n')
 

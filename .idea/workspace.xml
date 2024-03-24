@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09cf357-6f99-4a00-82d2-6832fe18b939" name="Changes" comment="Third Commit.">
+    <list default="true" id="c09cf357-6f99-4a00-82d2-6832fe18b939" name="Changes" comment="Fourth Commit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Data Collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Data Collection.html" afterDir="false" />
@@ -101,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711237467694</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fourth Commit.">
+      <option name="closed" value="true" />
+      <created>1711239595358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711239595358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,6 +118,7 @@
     <MESSAGE value="Third commit." />
     <MESSAGE value="Second commit" />
     <MESSAGE value="Third Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Third Commit." />
+    <MESSAGE value="Fourth Commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fourth Commit." />
   </component>
 </project>
